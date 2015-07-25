@@ -27,4 +27,9 @@ object Product {
   //Function to retrieve all products
   def findAll = products.toList.sortBy(_.ean)
 
+  /**
+   * Retrieves the product whose ean is the one given in the param.
+   * @param ean
+   */
+  def findByEan(ean: Long) = products.find(_.ean == ean)
 }
