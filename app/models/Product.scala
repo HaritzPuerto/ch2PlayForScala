@@ -5,7 +5,7 @@ package models
  */
 
 //Model class
-case class Product(ean: Long, name: String, Description: String)
+case class Product(ean: Long, name: String, description: String)
 
 //DAO with static data. In the future, it should access a DB.
 object Product {
