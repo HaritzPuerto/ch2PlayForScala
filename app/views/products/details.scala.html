@@ -1,0 +1,17 @@
+@(product: Product)(implicit lang: Lang)
+
+@main("Product Details") {
+    <h2>
+        @tags.barcode(product.ean)
+        products details, @product.name
+    </h2>
+
+    <dl class="dl-horizontal">
+        <dt>ean:</dt>
+        <dd>@product.ean</dd>
+        <dt>Name:</dt>
+        <dd>@product.name</dd>
+        <dt>Description:</dt>
+        <dd>@product.description</dd>
+    </dl>
+}
